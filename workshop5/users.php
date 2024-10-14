@@ -20,8 +20,6 @@ require('inc/header.php');
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
-                <th>status</th>
-                <th>last_login_datetime</th>
                 <th>Action</th> <!-- Columna para acciones como editar o eliminar -->
             </tr>
         </thead>
@@ -32,8 +30,6 @@ require('inc/header.php');
                         <td><?php echo htmlspecialchars($user['firstName']); ?></td>
                         <td><?php echo htmlspecialchars($user['lastName']); ?></td>
                         <td><?php echo htmlspecialchars($user['email']); ?></td>
-                        <td><?php echo htmlspecialchars($user['status']); ?></td>
-                        <td><?php echo htmlspecialchars($user['last_login_datetime']); ?></td>
                         <td>
                         
                          <a href="Update.php?email=<?php echo urlencode($user['email']); ?>" class="btn btn-warning">Edit</a>
