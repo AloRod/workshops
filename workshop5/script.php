@@ -43,7 +43,7 @@ if ($argc !== 2) {
 $hours = (int)$argv[1];
 
 // Crea la instancia de la clase y llama al método
-$db = new Database("localhost", "root", "", "users");
+$db = new Database("localhost", "root", "", "bdworkshop4");
 $db->deactivateInactiveUsers($hours);
 $db->close();
 ?>

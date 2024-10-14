@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$db = 'users';
+$db = 'bdworkshop4';
 
 $conn = new mysqli($host, $user, $password, $db);
 
